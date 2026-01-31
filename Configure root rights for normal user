@@ -1,0 +1,14 @@
+# Enable Passwordless sudo for User `sultantalib`
+
+Ensure sultantalib is in the sudo group
+
+Run: usermod -aG sudo sultantalib
+
+### **1. Switch to root**
+```bash
+sudo -i
+2. Open sudoers file
+visudo
+3. Add this line at the bottom
+sultantalib ALL=(ALL) NOPASSWD:ALL
+Save → Exit → Done.
