@@ -1,0 +1,14 @@
+Id CommandLine
+  -- -----------
+   1 Set-VMProcessor -VMName "YourProxmoxVMName" -ExposeVirtualizationExtensions $true
+   2 Set-VMProcessor -VMName "proxmox" -ExposeVirtualizationExtensions $true
+   3 Set-VMProcessor -VMName "proxmox" -ExposeVirtualizationExtensions $true
+   4 Get-VMProcessor -VMName "Proxmox"
+   5 Set-VMProcessor -VMName "Proxmox" -ExposeVirtualizationExtensions $true
+   6 Get-VMProcessor -VMName "Proxmox"
+   7 (Get-VMProcessor -VMName "Proxmox").ExposeVirtualizationExtensions
+   8 Stop-VM -Name "Proxmox" -Force
+   9 Stop-VM -Name "Proxmox" -Force
+  10 Set-VMProcessor "Proxmox" -ExposeVirtualizationExtensions $true
+  11 (Get-VMProcessor "Proxmox").ExposeVirtualizationExtensions
+  12 (Get-VM "Proxmox").Generation
