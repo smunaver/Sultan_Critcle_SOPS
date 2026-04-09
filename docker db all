@@ -1,0 +1,9 @@
+Microsoft SQL Server (The One-Liner)
+PowerShell
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=YourPassword123!" -p 1433:1433 --name mssql -v D:/docker_data/mssql:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2022-latest
+2. MongoDB (The One-Liner)
+PowerShell
+docker run -d -p 27017:27017 --name mongodb -v D:/docker_data/mongodb:/data/db mongo:latest
+3. MySQL (The One-Liner)
+PowerShell
+docker run -d -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=YourPassword123! -v D:/d
