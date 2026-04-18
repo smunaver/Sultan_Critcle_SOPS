@@ -1,0 +1,19 @@
+create that full folder + file structure in one go using PowerShell with a small script.
+
+Run this in PowerShell:
+
+$base = "D:\VoiceBot-Docker"
+
+# Create folders
+New-Item -ItemType Directory -Path "$base\app" -Force
+New-Item -ItemType Directory -Path "$base\voices" -Force
+New-Item -ItemType Directory -Path "$base\client" -Force
+
+# Create files
+New-Item -ItemType File -Path "$base\app\main.py" -Force
+New-Item -ItemType File -Path "$base\app\requirements.txt" -Force
+New-Item -ItemType File -Path "$base\client\relay.py" -Force
+New-Item -ItemType File -Path "$base\Dockerfile" -Force
+New-Item -ItemType File -Path "$base\docker-compose.yml" -Force
+Quick verification
+tree D:\VoiceBot-Docker
