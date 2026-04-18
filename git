@@ -1,0 +1,12 @@
+  23 git init
+  24 git add .
+  25 git status
+  26 git commit -m "first commit"
+  27 git remote add origin https://github.com/smunaver/voice-agent-docker.git
+  28 git push -u origin main
+  29 git branch -M main
+  30 git push -u origin main
+  31 git pull -u origin main
+  32 clear
+  33 git status
+  34 git pull origin main
