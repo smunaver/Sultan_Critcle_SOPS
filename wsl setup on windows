@@ -5,3 +5,18 @@ wsl --shutdown
 wsl --unregister Ubuntu
 wsl --unregister Ubuntu-22.04
 wsl --unregister HomeDock.OS_WSL2
+
+
+wsl --install -d Ubuntu
+Create your folder on D: D:\WSL\Ubuntu
+
+
+Export the fresh install to D:
+wsl --export Ubuntu D:\WSL\ubuntu_fresh.tar
+
+Unregister the C: drive version:
+wsl --unregister Ubuntu
+
+wsl --import Ubuntu D:\WSL\Ubuntu D:\WSL\ubuntu_fresh.tar
+
+Cleanup: Delete D:\WSL\ubuntu_fresh.tar.
