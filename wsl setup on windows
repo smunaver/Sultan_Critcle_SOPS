@@ -1,0 +1,7 @@
+clean up
+wsl --list --verbose
+wsl --shutdown
+
+wsl --unregister Ubuntu
+wsl --unregister Ubuntu-22.04
+wsl --unregister HomeDock.OS_WSL2
